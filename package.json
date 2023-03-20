@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon server.js",
-    "build": "node server.js"
-  },
+    "start": "node server.js",
+    "lint": "eslint",
+    "format": "prettier --single-quote --write *.js"    
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
