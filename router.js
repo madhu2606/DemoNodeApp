@@ -2,10 +2,9 @@ var express = require("express");
 var router = express.Router();
 
 const  credential = {
-    email : "admin@gmail.com",
-    password : "admin123"
+    email : "madhu@gmail.com",
+    password : "madhu"
 }
-
 // login user
 router.post('/login', (req, res)=>{
     if(req.body.email == credential.email && req.body.password == credential.password){
@@ -16,7 +15,6 @@ router.post('/login', (req, res)=>{
         res.end("Invalid Username")
     }
 });
-
 // route for dashboard
 router.get('/dashboard', (req, res) => {
     if(req.session.user){
@@ -25,7 +23,6 @@ router.get('/dashboard', (req, res) => {
         res.send("Unauthorize User")
     }
 })
-
 // route for logout
 router.get('/logout', (req ,res)=>{
     req.session.destroy(function(err){
