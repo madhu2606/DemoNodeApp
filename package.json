@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint",
-    "format": "prettier --single-quote --write *.js"    
+    "format": "prettier --single-quote --write *.js",
+    "build"  :"node server.js"
 },
   "keywords": [],
   "author": "",
